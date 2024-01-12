@@ -1,30 +1,61 @@
-# React + TypeScript + Vite
+# React ProfileCard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**ProfileCard** is a React component designed for creating interactive and customizable profile cards. Use this component to showcase information about an individual, including their name, description, social media links, and more.
 
-Currently, two official plugins are available:
+## Key Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Customization:** Highly customizable with options to adjust width, background color, title color, text color, and background image of the card.
 
-## Expanding the ESLint configuration
+- **Integrated Social Icons:** Includes predefined social media icons for platforms such as Facebook, Github, Instagram, Twitter, TikTok, LinkedIn, and Youtube.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Automatic Social Media Detection:** Automatically selects the correct icon for the provided social media links, making it easy to integrate new platforms.
 
-- Configure the top-level `parserOptions` property like this:
+## Installation
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```bash
+npm install react-profile-card
+```
+## Basic Usage
+
+``` js
+import React from 'react';
+import ProfileCard from 'react-profile-card';
+
+const MyProfile = () => {
+  const myCardStyle = {
+    width: '300px',
+    backgroundColor: '#F0F0F0',
+    titleColor: '#333333',
+    descriptionColor: '#666666',
+    backgroundPicture: 'https://example.com/background.jpg',
+    pictureUrl: 'https://example.com/profile-picture.jpg',
+  };
+
+  const myMedias = ['https://facebook.com/myprofile', 'https://github.com/myprofile'];
+
+  return <ProfileCard name="John Doe" description="Software Developer" mediasUrl={myMedias} cardStyle={myCardStyle} />;
+};
+
+export default MyProfile;
+
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Props
+
+|Prop	|Type	|Description|
+|name	|string	|The name of the individual being displayed.|
+|description	|string	|(Optional) A brief description or role of the individual.|
+|mediasUrl	|string[]	|An array of social media URLs associated with the individual.|
+|cardStyle	|object	|(Optional) An object containing styles for customizing the appearance of the profile card.|
+
+### cardStyle Object Properties
+
+|Property	|Type	|Description|
+|width	|string	|(Optional) Width of the profile card. Example: '300px'.|
+|backgroundColor	|string	|(Optional) Background color of the card. Example: '#F0F0F0'.|
+|titleColor	|string	|(Optional) Color of the title (name) text. Example: '#333333'.|
+|descriptionColor	|string	|(Optional) Color of the description text. Example: '#666666'.|
+|backgroundPicture	|string	|(Optional) URL of the background picture for the card. Example: 'https://example.com/background.jpg'.|
+|pictureUrl	|string	|URL of the individual's profile picture. Example: 'https://example.com/profile-picture.jpg'.|
+
+Customize and showcase your profiles attractively with ProfileCard!
