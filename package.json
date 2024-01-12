@@ -1,7 +1,10 @@
 {
   "name": "react-card-profile",
   "version": "0.0.1",
-  "homepage": "",
+  "homepage": "https://github.com/Jaycom17/react-card-profile",
+  "description": "React component designed to create interactive and customizable profile cards. You can use this component to display information about an individual, including their name, description and links to social media.",
+  "keywords": ["React", "Profile", "Avatar", "Github", "Social Media"],
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "dev": "vite",
