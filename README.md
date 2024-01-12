@@ -42,20 +42,23 @@ export default MyProfile;
 
 ## Props
 
-|Prop	|Type	|Description|
-|name	|string	|The name of the individual being displayed.|
-|description	|string	|(Optional) A brief description or role of the individual.|
-|mediasUrl	|string[]	|An array of social media URLs associated with the individual.|
-|cardStyle	|object	|(Optional) An object containing styles for customizing the appearance of the profile card.|
+| Prop          | Type       | Description                                                                                     |
+| ------------- | ---------- | ----------------------------------------------------------------------------------------------- |
+| `name`        | `string`   | The name of the individual being displayed.                                                    |
+| `description` | `string`   | (Optional) A brief description or role of the individual.                                       |
+| `mediasUrl`   | `string[]` | An array of social media URLs associated with the individual.                                   |
+| `cardStyle`   | `object`   | (Optional) An object containing styles for customizing the appearance of the profile card.      |
 
-### cardStyle Object Properties
+### `cardStyle` Object Properties
 
-|Property	|Type	|Description|
-|width	|string	|(Optional) Width of the profile card. Example: '300px'.|
-|backgroundColor	|string	|(Optional) Background color of the card. Example: '#F0F0F0'.|
-|titleColor	|string	|(Optional) Color of the title (name) text. Example: '#333333'.|
-|descriptionColor	|string	|(Optional) Color of the description text. Example: '#666666'.|
-|backgroundPicture	|string	|(Optional) URL of the background picture for the card. Example: 'https://example.com/background.jpg'.|
-|pictureUrl	|string	|URL of the individual's profile picture. Example: 'https://example.com/profile-picture.jpg'.|
+| Property             | Type     | Description                                                                                     |
+| -------------------- | -------- | ----------------------------------------------------------------------------------------------- |
+| `width`              | `string` | (Optional) Width of the profile card. Example: '300px'.                                         |
+| `backgroundColor`    | `string` | (Optional) Background color of the card. Example: '#F0F0F0'.                                    |
+| `titleColor`         | `string` | (Optional) Color of the title (name) text. Example: '#333333'.                                  |
+| `descriptionColor`   | `string` | (Optional) Color of the description text. Example: '#666666'.                                    |
+| `backgroundPicture`  | `string` | (Optional) URL of the background picture for the card. Example: 'https://example.com/background.jpg'. |
+| `pictureUrl`         | `string` | URL of the individual's profile picture. Example: 'https://example.com/profile-picture.jpg'.   |
+
 
 Customize and showcase your profiles attractively with ProfileCard!
